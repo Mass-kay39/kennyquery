@@ -1,0 +1,52 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    background: linear-gradient(to right, cyan, gray, blue);
+}
+.calculator{
+    background: green; width: 25em; margin: 5em auto; margin-top: 0px; border-radius: 15px;
+}
+.output{
+    background: linear-gradient(to right, black , black);
+    color: white;
+    height: 5em; line-height: 8em; font-size: 1.7em; padding: 0 1.5em; text-align: right;
+}
+.controls{
+    display: grid;grid-template-columns: repeat(4, 1fr); padding: 0.5em; margin: auto 0.5em;
+}
+.controls button{
+    background: blue; color:white; height: 5.5em; cursor: pointer; margin: 0.5em; border: unset; border-radius: 5px; outline: unset; font-size: 15px;
+}
+.controls button:hover{
+    background: white; color: black;
+}
+.controls button:active{
+    transform: translateY(0.5em);
+}
+.controls .red{
+    background: cyan; color: red;
+}
+.slide{
+    height: 50px;width: 10em;
+}
+img{
+    height: 50ox; width:25em; margin: 3em auto; margin-left: 50px;
+}
+@media only screen and (max-width: 600px) {
+    .calculator{
+        height: 65vh; width: 15em; margin: 2em auto; margin-top: 150px;
+    }
+    .output{
+        height: 3em; background: white; color:black; line-height: 5em; border-radius: 5px;
+    }
+    .controls{
+        padding: 0.3em;
+    }
+    .controls button{
+        height: 3.2em;
+    }
+    img{
+        height: 180px; width: 15em; margin-left: 120px; margin-top: 0px;
+    }
+}
